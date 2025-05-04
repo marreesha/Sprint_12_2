@@ -53,7 +53,7 @@ class TestAdUpdate:
         delete_test_ad(token=token, ad_id=ad_id)
 
     @allure.story('Попытка обновления другим пользователем')
-    def test_update_listing_by_other_user(self, api_user, create_new_user, api_ad, ad_data, create_test_ad,
+    def test_update_ad_by_other_user(self, api_user, create_new_user, api_ad, ad_data, create_test_ad,
                                           delete_test_ad):
         # correct_token
         correct_token = create_new_user
